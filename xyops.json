@@ -1,0 +1,69 @@
+{
+	"type": "xypdf",
+	"version": "1.0",
+	"description": "xyOps Portable Data Object",
+	"items": [
+		{
+			"type": "plugin",
+			"data": {
+				"id": "xyplug-sun-trigger",
+				"title": "Sun Trigger",
+				"type": "scheduler",
+				"command": "uvx git+https://github.com/UNICodehORN/xyplug-sun-trigger@v1.0.0",
+				"script": "",
+				"icon": "sun-clock",
+				"notes": "Trigger xyOps schedules based on sun using https://api.sunrise-sunset.org/ API",
+				"params": [
+					{
+						"id": "executeAfter",
+						"title": "Execute after sunrise/sunset",
+						"type": "select",
+						"caption": "Select whether the job should be executed after sunrise or sunset.",
+						"locked": false,
+						"value": "Sunrise, Sunset"
+					},
+					{
+						"id": "lat",
+						"title": "Latitude",
+						"type": "text",
+						"caption": "Latitude Coordinate to get sunrise info for.",
+						"locked": false,
+						"value": "52.520008",
+						"variant": "text",
+						"required": true
+					},
+					{
+						"id": "lng",
+						"title": "Longitude",
+						"type": "text",
+						"caption": "Longitude Coordinate to get sunrise info for.",
+						"locked": false,
+						"value": "13.404954",
+						"variant": "text",
+						"required": true
+					},
+					{
+						"id": "offsetInMinutes",
+						"title": "Offset in Minutes",
+						"type": "text",
+						"caption": "Offset is in minutes and can be negative. For example if a job should run 2 minutes before sunrise, set the offset to -2.",
+						"locked": false,
+						"value": "0",
+						"variant": "text",
+						"required": true
+					},
+					{
+						"id": "cachingDir",
+						"title": "Caching Directory",
+						"type": "text",
+						"caption": "To avoid many API calls the API answer can be cached to disc.",
+						"locked": false,
+						"value": "/tmp",
+						"variant": "text",
+						"required": false
+					}
+				]
+			}
+		}
+	]
+}
