@@ -1,6 +1,6 @@
 [project]
 name = "xyplug-sun-trigger"
-version = "1.0.0"
+version = "1.0.1"
 description = "xyOps trigger plugin to execute jobs depending on the sun"
 requires-python = ">=3.9"
 dependencies = [
