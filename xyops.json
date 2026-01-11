@@ -6,11 +6,11 @@
     {
       "type": "plugin",
       "data": {
-        "id": "xyplugSunTrigger",
+        "id": "pmk0yowdx57qykra",
         "title": "Sun Trigger",
         "type": "scheduler",
         "enabled": true,
-        "command": "uvx git+https://github.com/UNICodehORN/xyplug-sun-trigger@v1.0.1",
+        "command": "uvx git+https://github.com/UNICodehORN/xyplug-sun-trigger@v1.0.2",
         "script": "",
         "icon": "sun-clock",
         "notes": "Trigger xyOps schedules based on sun using https://api.sunrise-sunset.org/ API",
